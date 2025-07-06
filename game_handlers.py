@@ -189,7 +189,7 @@ class RPDHandler(GameHandler):
 class BitGuessingHandler(GameHandler):
     def __init__(self, answer: int):
         self.original_number = answer  # 原始数字
-        self.current_number = answer   # 当前数字（会随着减法操作变化）
+        self.current_number = answer   # 当前数字（会随着减法变化）
         
     def parse_response(self, generated_text: str) -> Tuple[str, str]:
         """解析响应并返回结果和反馈"""
