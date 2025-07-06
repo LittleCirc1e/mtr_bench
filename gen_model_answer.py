@@ -124,8 +124,7 @@ def run_static_eval_vllm(
                     # Remove from active_questions
                     active_questions = [q for q in active_questions if q["question_id"] != question_id]
                     continue  # Proceed to next prompt
-                
-        # Process outputs (both batch and individual)
+
         for i, output in enumerate(outputs):
             question_id = question_ids[i]
             state = question_states.get(question_id)
