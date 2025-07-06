@@ -64,13 +64,11 @@ class RPDEvaluator(GameEvaluator):
                     break
         
         if success_found:
-            # 构造详细的成功信息
             detail = f"Successfully broke in with password: {final_guess}\n"
             detail += f"Total attempts: {len(password_changes)}\n"
             detail += "Password change sequence:\n" + "\n".join(password_changes)
             return True, detail
         else:
-            # 构造详细的失败信息
             detail = f"Failed to break in after {len(turns)} attempts\n"
             detail += "Password change sequence:\n" + "\n".join(password_changes)
             return False, detail
