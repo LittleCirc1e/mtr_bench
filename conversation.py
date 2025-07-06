@@ -14,7 +14,6 @@ from typing import List, Any, Dict, Union, Tuple
 
 
 class SeparatorStyle(IntEnum):
-    """Separator styles."""
 
     ADD_COLON_SINGLE = auto()
     ADD_COLON_TWO = auto()
