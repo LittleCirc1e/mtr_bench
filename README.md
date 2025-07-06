@@ -34,12 +34,10 @@ MTR-Bench is structured around four core task categories, each designed to probe
 
 ## 🚀 Quick Start
 
-
-#### Evaluating an Open-Source Model (e.g., Llama-3.1-70B)
-
 ```bash
-python gen_model_answer.py --model-path /cpfs01/user/lanlin.lxy/models/Qwen2.5-1.5B-Instruct --model-id Qwen2.5-1.5B-Instruct --category information_query --game-type BitQuery  --difficulty easy --max-round 5 
+python gen_model_answer.py --model-path YOUR_MODEL_PATH --model-id MODEL_NAME --category information_query --game-type BitQuery  --difficulty easy --max-round 5 
 ```
+
 ## Citation
 
 If you use MTR-Bench or our framework in your research, please cite our paper:
